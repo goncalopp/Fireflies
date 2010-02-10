@@ -25,7 +25,6 @@ type
 
   TForm1 = class(TForm)
    Button1: TButton;
-   Button2: TButton;
    Edit1: TEdit;
    Timer1: TTimer;
    procedure Button1Click(Sender: TObject);
@@ -124,7 +123,7 @@ end;
 procedure TForm1.Timer1Timer(Sender: TObject);
 var i:integer;
 	begin
-    canvas.Rectangle(30,0,1000,1000);
+    canvas.Rectangle(30,0,100,1000);
     for i:=0 to length(fireflies)-1 do
     	begin
      	fireflies[i].step();
